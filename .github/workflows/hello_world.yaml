@@ -18,7 +18,7 @@ jobs:
           uses: mscoutermarsh/cowsays-action@v1
           with:
             # step - context - outputs - step id - output name
-            text: "moooooo!!!! today's date is ${{ steps.s01.outputs.CURR_DATE }}"
+            text: "moooooo!!!! today's date is ${{ steps.s01.outputs.CURR_DATE }}, ${{ github.ref }}, ${{ github.repository }}"
             color: 'blue'
         #   - id: s01
         #     run: ls -la
