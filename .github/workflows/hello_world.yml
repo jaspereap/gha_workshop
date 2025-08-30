@@ -12,3 +12,5 @@ jobs:
         steps:
           - id: s00
             run: echo "current time in Github $(date)"
+          - id: s01
+            run: ls -la
