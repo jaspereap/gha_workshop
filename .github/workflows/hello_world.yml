@@ -17,7 +17,7 @@ jobs:
         - id: s02
           uses: mscoutermarsh/cowsays-action@v1
           with:
-            # step - context
+            # step - context - outputs - step id - output name
             text: "moooooo!!!! today's date is ${{ steps.s01.outputs.CURR_DATE }}"
             color: 'blue'
         #   - id: s01
