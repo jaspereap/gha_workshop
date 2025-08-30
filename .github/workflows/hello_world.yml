@@ -13,4 +13,9 @@ jobs:
           - id: s00
             run: echo "current time in Github $(date)"
           - id: s01
-            run: ls -la
+            uses: mscoutermarsh/cowsay-action@master
+            with:
+                text: 'ship ship ship!'
+                color: 'blue'
+        #   - id: s01
+        #     run: ls -la
