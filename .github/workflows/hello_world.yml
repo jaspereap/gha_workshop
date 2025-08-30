@@ -10,12 +10,12 @@ jobs:
     greetings:
         runs-on: ubuntu-latest
         steps:
-          - id: s00
-            run: echo "current time in Github $(date)"
-          - id: s01
-            uses: mscoutermarsh/cowsay-action@master
-            with:
-                text: 'ship ship ship!'
-                color: 'blue'
+        - id: s00
+          run: echo "current time in Github $(date)"
+        - name: Cowsays
+          uses: mscoutermarsh/cowsays-action@v1
+          with:
+            text: 'ship ship ship!'
+            color: 'blue'
         #   - id: s01
         #     run: ls -la
